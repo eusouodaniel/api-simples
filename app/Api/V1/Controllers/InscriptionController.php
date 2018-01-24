@@ -41,7 +41,7 @@ class InscriptionController extends Controller{
         return $inscription;
     }
 
-    public function store(Request $request){
+    public function create(Request $request){
         $currentUser = JWTAuth::parseToken()->authenticate();
 
         $inscription = new Inscription;
@@ -72,7 +72,7 @@ class InscriptionController extends Controller{
         return $this->response->error('Erro ao editar', 500);
     }
 
-    public function destroy($id){
+    public function delete($id){
         $currentUser = JWTAuth::parseToken()->authenticate();
         $inscription = $currentUser->inscription()->find($id);
 

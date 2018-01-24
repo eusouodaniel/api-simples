@@ -33,9 +33,9 @@ $api->version('v1', function (Router $api) {
 		$api->get('inscriptions', 'App\Api\V1\Controllers\InscriptionController@index');
 		$api->get('user', 'App\Api\V1\Controllers\UserController@index');
 		$api->get('inscriptions/{id}', 'App\Api\V1\Controllers\InscriptionController@show');
-		$api->post('inscriptions', 'App\Api\V1\Controllers\InscriptionController@store');
+		$api->post('inscriptions', 'App\Api\V1\Controllers\InscriptionController@create');
 		$api->put('inscriptions/{id}', 'App\Api\V1\Controllers\InscriptionController@update');
-		$api->delete('inscriptions/{id}', 'App\Api\V1\Controllers\InscriptionController@destroy');
+		$api->delete('inscriptions/{id}', 'App\Api\V1\Controllers\InscriptionController@delete');
 
 	});
 
