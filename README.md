@@ -1,2 +1,2 @@
-## Creator @eusouodaniel
+## Criado por @eusouodaniel
 ## danielsilva.io
